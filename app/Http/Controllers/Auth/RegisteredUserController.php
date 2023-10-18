@@ -46,6 +46,13 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        return redirect(RouteServiceProvider::HOME);
+        if(Auth::user() && Auth::user()->role=="admin")
+        {
+            return redirect()->intended(RouteServiceProvider::ADMIN);
+        }
+        else
+        {
+            return redirect()->intended(RouteServiceProvider::USER); 
+        }
     }
 }
