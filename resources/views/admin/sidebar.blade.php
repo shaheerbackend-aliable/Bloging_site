@@ -24,14 +24,14 @@
 
             <!-- User Data -->
             <li class="nav-item">
-                <a class="nav-link collapsed " href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <a class="nav-link collapsed " href="{{Route('admin.dashboard')}}" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                     <span>User Data</span>
                 </a>
             </li>
 
             <!--Upload Blog -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+                <a class="nav-link collapsed" href="{{Route('admin.upload')}}" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
                     <span>Upload Blog</span>
                 </a>
             </li>

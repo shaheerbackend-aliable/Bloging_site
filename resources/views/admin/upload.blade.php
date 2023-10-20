@@ -48,17 +48,16 @@
                         <h1 class="h3 mb-0 text-gray-800">Upload Blog</h1>
                     </div>
                     <div>
-                        <form>
+                    <form action="{{Route('admin.post')}}" method="post" enctype="multipart/form-data">
+                    @csrf
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1">Write Something</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text"></textarea>
                             </div>
-                            <form>
                                 <div class="form-group">
                                     <label for="exampleFormControlFile1">Upload Any Image</label>
-                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image">
                                 </div>
-                            </form>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>
                     </div>

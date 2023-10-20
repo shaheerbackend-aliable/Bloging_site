@@ -46,7 +46,7 @@
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">User Data</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Upload A Blog</a>
+                        <a href="{{Route('admin.upload')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Upload A Blog</a>
                     </div>
                     <div>
                         <table class="table table-striped">
@@ -59,12 +59,14 @@
                                 </tr>
                             </thead>
                             <tbody>
+                            @foreach($list as $item)
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>user@gmail.com</td>
-                                    <td>User</td>
+                                    <th scope="row">{{$loop->iteration}}</th>
+                                    <td>{{$item->name}}</td>
+                                    <td>{{$item->email}}</td>
+                                    <td>{{$item->role}}</td>
                                 </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
