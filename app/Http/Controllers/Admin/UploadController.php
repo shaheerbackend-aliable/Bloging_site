@@ -18,9 +18,11 @@ class UploadController extends Controller
     {
         $post = new BlogPost();
         $req->validate([
+            'heading' => 'required',
             'text' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
+        $post->heading = $req->heading;
         $post->text = $req->text;
          //upload image:
          $image = $req->image;
@@ -29,7 +31,7 @@ class UploadController extends Controller
          $image->move('post', $imagename);
          $post->image = $imagename;
         $post->save();
-        return view('admin.index');
+        return view('admin.upload');
     }
 
 }

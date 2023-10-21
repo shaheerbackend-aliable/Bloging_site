@@ -10,7 +10,7 @@ class AdminController extends Controller
 {
     public function dashboard()
     {
-        $list = User::all();
+        $list = User::where('role','user')->get();
         return view('admin.index', get_defined_vars());
     }
 }

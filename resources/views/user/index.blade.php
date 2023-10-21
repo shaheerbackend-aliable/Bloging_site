@@ -164,15 +164,15 @@
   <!-- ==================start content ================ -->
 
 
-
+    @foreach($list as $content)  
     <div class="content-section">
 
       <div class="row">
         <div class="col-xl-8 col-lg-7 col-md-6 col-sm-12 content-1">
           <h4>Travel</h4>
-          <p>TRAVELING COST: TIPS FOR <br> AFFORDABLE ADVENTURES</p>
+          <p>{{$content->heading}}</p>
           <div class="content-img">
-            <img src="https://stelary.themewant.com/travel/wp-content/uploads/2023/08/14-1536x1152.jpg" alt="">
+            <img src="/post/{{$content->image}}" alt="">
           </div>
 
 
@@ -181,13 +181,12 @@
             <div class="date-time">
               By <span>DANY</span>
 
-              on <span>AUG 16, 2023</span>
+              on <span>{{$content->created_at}}</span>
             </div>
-            <p>She started her blog exactly six months before I launched Camels & Chocolate, and...</p>
+            <p>{{$content->text}}</p>
             <div class="continue-reading">
             <button type="button" class="btn">CONTINUE READING</button>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tempora excepturi tempore minus voluptatem quia. Voluptatum tempore magni iste aliquam autem, tenetur perferendis itaque veritatis omnis adipisci vero temporibus nesciunt. Vitae, necessitatibus.</p>
           </div>
 
 
@@ -218,7 +217,7 @@
         </div>
       </div>
     </div>
-  
+  @endforeach
 
 
   <!-- ==================end content ================ -->
