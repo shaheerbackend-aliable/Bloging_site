@@ -1,19 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
 
 * {
-    border: 0;
     box-sizing: border-box;
-    // font-family: "Tilt Neon", sans-serif;
-
     margin: 0;
-    // background-color: #02624f;
     padding: 0;
-}
-
-body {
-    // background-color: #f8f8f8;
+  }
+  
+  body {
     font-family: "Tilt Neon", sans-serif;
-}
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
 
 /* =====================
                     navbar
@@ -140,6 +136,11 @@ body {
     border-color: #000;
 }
 
+.nav-item .dropdown-menu {
+    // background-color: #000;
+    margin-left: -67px;
+}
+
 .social-media {
     display: inline-block;
 }
@@ -176,7 +177,13 @@ body {
 
 /* ======================craousal
 ========================== */
-.carousel-inner .carousel-item .carousel-caption  {
+
+
+.carousel-inner,
+.carousel-item {
+  height: 650px; /* Adjust the height as needed */
+}
+.carousel-inner .carousel-item .carousel-caption {
     font-size: 4vw;
     font-weight: bolder;
     text-align: center;
@@ -210,11 +217,9 @@ body {
 
 .content-section {
     margin-top: 50px;
-    // background-color: #fff;
-    // margin: 60px;
-    // padding-top: 30px;
-    // font-family: ;
-}
+   /* Limit the height to the viewport */
+    // overflow: hidden; 
+  }
 .content-section .content-1 h4 {
     background-color: #fff;
     text-align: center;
@@ -320,7 +325,7 @@ body {
     text-align: center;
 }
 
-.content-section .cards .card-body  {
+.content-section .cards .card-body {
     // background-color: #02624f;
     text-align: center;
 }
@@ -331,22 +336,17 @@ body {
 
 @media (max-width: 1024px) {
     .content-section {
-        padding:10px;
-     
+        padding: 10px;
     }
-   
-  
 
-   
     .content-section .content-1 .content-img img {
         width: 60vw;
     }
- 
 
     // ====================content section col-4==========
-.content-section .cards {
-    padding-left: 106px;
-}
+    .content-section .cards {
+        padding-left: 106px;
+    }
     .content-section .cards h4 {
         text-align: left;
 
@@ -361,47 +361,40 @@ body {
         font-family: "Tilt Neon", sans-serif;
         text-align: center;
     }
-
-  
-  
 }
 
 @media (max-width: 768px) {
     /* Adjust styles for screens less than or equal to 768px wide */
     .content-section {
-        padding:10px;
-     
+        padding: 10px;
     }
-   
-  
 
-   
     .content-section .content-1 h4 {
         // width: 55vw;/
         padding-left: 20px;
         text-align: center;
-    } .content-section .content-1 p {
+    }
+    .content-section .content-1 p {
         // width: 55vw;/
         // padding-left: 10px;
         text-align: end;
     }
-     .content-section .content-1 .content-img  {
+    .content-section .content-1 .content-img {
         // width: 55vw;/
         padding-left: 10px;
     }
-     .content-section .content-1 .content-img img {
+    .content-section .content-1 .content-img img {
         width: 55vw;
         // padding-left: -10px;
     }
- 
 
     // ====================content section col-4==========
-.content-section .cards {
-    width: 10vw;
-    // : 10vw;
-    padding-left: 84px;
-    // margin:;
-}
+    .content-section .cards {
+        width: 10vw;
+        // : 10vw;
+        padding-left: 84px;
+        // margin:;
+    }
     .content-section .cards h4 {
         text-align: left;
 
@@ -423,41 +416,38 @@ body {
     /* Adjust styles for screens less than or equal to 576px wide */
     // .content-section {
     //     padding:0px;
-     
-    // }
-   
-  
 
-   
+    // }
+
     .content-section .content-1 h4 {
         // width: 55vw;/
         font-size: large;
         // padding-left: 10px;
         // text-align: center;
-    }    .content-section .content-1 p {
+    }
+    .content-section .content-1 p {
         // width: 55vw;/
         font-size: large;
         // padding-left: 10px;
         text-align: center;
     }
-     .content-section .content-1 .content-img  {
+    .content-section .content-1 .content-img {
         // width: 55vw;/
         padding-left: 10px;
     }
-     .content-section .content-1 .content-img img {
-        width:90vw;
+    .content-section .content-1 .content-img img {
+        width: 90vw;
         // text-align: center;
         // padding-left: -10px;
     }
- 
 
     // ====================content section col-4==========
-.content-section .cards {
-    // width: 10vw;
-    // : 10vw;
-    padding-left: 40px;
-    // margin:;
-}
+    .content-section .cards {
+        // width: 10vw;
+        // : 10vw;
+        padding-left: 40px;
+        // margin:;
+    }
     .content-section .cards h4 {
         text-align: start;
 
@@ -481,5 +471,6 @@ body {
         padding-left: 20px;
         // margin:;
     }
-    
 }
+
+// ============footer start==============
