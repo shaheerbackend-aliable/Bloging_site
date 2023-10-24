@@ -256,7 +256,7 @@
                         </div>
                     </article>
                     <div class="contact-form article-comment">
-                        <h4>Leave a Reply</h4>
+                        <h4>Contact Us</h4>
                         <form id="contact-form" method="POST">
                             <div class="row">
                                 <div class="col-md-6">
