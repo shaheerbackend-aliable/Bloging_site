@@ -18,6 +18,7 @@
                             <span class="menu-title">All Blogs</span>
                         </a>
                     </li>
+              
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="{{Route('admin.upload')}}" aria-expanded="false"
                             aria-controls="auth">
@@ -26,5 +27,6 @@
                         </a>
 
                     </li>
+                    
                 </ul>
             </nav>
