@@ -13,4 +13,11 @@ class UserController extends Controller
         $list = BlogPost::all();
         return view('User.index',get_defined_vars());
     }
+
+    public function blog()
+    {
+        $list = BlogPost::all();
+        return view('User.blog',get_defined_vars());
+    }
 }
+

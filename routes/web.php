@@ -35,6 +35,7 @@ Route::middleware('admin')->group(function () {
 });
 Route::middleware('user')->group(function () {
     Route::get('user/dashboard', [UserController::class, 'dashboard'])->name('user.dashboard');
+    Route::get('user/blog', [UserController::class, 'blog'])->name('user.blog');
 });
 
 Route::get('/message', function () {

@@ -19,7 +19,9 @@
 
 <body>
   <!-- start topbar content -->
-  <nav class="navbar navbar-expand-lg navbar-light ">
+
+  
+  <nav class="navbar navbar-fixed navbar-expand-lg navbar-light ">
     <div class="container-fluid">
       <a class="navbar-brand my-3"  href="#">BLOG SITE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,12 +33,12 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="{{Route('user.blog')}}">Blog</a>
           </li>
           <div id="contact-us">
 
             <li class="nav-item">
-              <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
+              <a class="nav-link " href="#footer" tabindex="-1" aria-disabled="true">Contact Us</a>
             </li>
           </div>
          
@@ -124,7 +126,36 @@
 
   <!-- ==================start crauosal ================ -->
 
-  <div id="carouselExampleCaptions" class="carousel slide">
+
+
+  <div id="slider">
+    <div class="slide" style="background:dodgerBlue;">
+      <img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg" >
+    </div>
+
+    <div class="slide" style="background:coral;">
+       <img src="https://wallpapercave.com/wp/wp2634222.jpg" >
+    </div>
+
+    <div class="slide" style="background:crimson;">
+      <img src="https://wallpaperaccess.com/full/1154341.jpg" >
+    </div>
+
+    <div class="slide" style="background: #6edf10;">
+      <img src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg" >
+    </div>
+
+    <!--Controlling arrows-->
+    <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+  </span>
+    <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+  </span>
+  </div>
+    <div id="dots-con">
+   <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+   </div>
+
+  <!-- <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -161,7 +192,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
-  </div>
+  </div> -->
 
   <!-- ==================end crauosal ================ -->
 
@@ -209,7 +240,7 @@
           <img src="https://stelary.themewant.com/travel/wp-content/uploads/2023/08/14-1536x1152.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">DANI NISI</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
           </div>
           <div class="card-body cards-body">
@@ -228,11 +259,9 @@
   <!-- ==================end content ================ -->
 
 <!-- -----------start footer============= -->
-<!-- Remove the container if you want to extend the Footer to full width. -->
 
-<!-- <div class="container my-5"> -->
   <!-- Footer -->
-<footer class="bg-dark text-center text-white p-0 ">
+<footer class="bg-dark text-center text-white p-0 " id=footer>
   <!-- Grid container -->
   <div class="container p-3">
     <!-- Section: Social media -->
@@ -386,15 +415,91 @@
 </footer>
 <!-- Footer -->
   
-<!-- </div> -->
+
 <!-- End of .container -->
 
 <!-- ----------end footer============= -->
 
 
 
-  <!-- linking the js -->
-  <script src="main.js"></script>
+ 
+   
+
+
+
+<script type="text/javascript">
+var slides = document.querySelectorAll(".slide");
+var dots = document.querySelectorAll(".dot");
+var index = 0;
+
+
+function prevSlide(n){
+  index+=n;
+  console.log("prevSlide is called");
+  changeSlide();
+}
+
+function nextSlide(n){
+  index+=n;
+  changeSlide();
+}
+
+changeSlide();
+
+function changeSlide(){
+
+  if(index>slides.length-1)
+    index=0;
+
+  if(index<0)
+    index=slides.length-1;
+
+
+
+    for(let i=0;i<slides.length;i++){
+      slides[i].style.display = "none";
+
+      dots[i].classList.remove("active");
+
+
+    }
+
+    slides[index].style.display = "block";
+    dots[index].classList.add("active");
+
+
+
+}
+
+
+
+
+
+
+
+
+
+  // Function to smoothly scroll to the target element
+  function scrollToElement(targetElement) {
+    window.scrollTo({
+      behavior: 'smooth',
+      top: targetElement.offsetTop,
+    });
+  }
+
+  const contactUsLink = document.querySelector('a[href="#footer"]');
+  if (contactUsLink) {
+    contactUsLink.addEventListener('click', function (e) {
+      e.preventDefault();
+      const footerElement = document.getElementById('footer');
+      if (footerElement) {
+        scrollToElement(footerElement);
+      }
+    });
+  }
+
+
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
   <script src="https://kit.fontawesome.com/f558cc5ba9.js" crossorigin="anonymous"></script>
