@@ -32,6 +32,9 @@ Route::middleware('admin')->group(function () {
     Route::get('admin/upload', [UploadController::class, 'view'])->name('admin.upload');
     Route::post('admin/post', [UploadController::class, 'post'])->name('admin.post');
     Route::get('admin/data', [UploadController::class, 'blog_data'])->name('admin.blog');
+    Route::get('admin/updateblog/{id}', [UploadController::class, 'update_form'])->name('admin.up_blog');
+    Route::post('admin/update/{id}', [UploadController::class, 'update_blog'])->name('admin.update');
+    Route::get('admin/delete/{id}', [UploadController::class, 'delete_blog'])->name('admin.delete');
 });
 Route::middleware('user')->group(function () {
     Route::get('user/dashboard', [UserController::class, 'dashboard'])->name('user.dashboard');
