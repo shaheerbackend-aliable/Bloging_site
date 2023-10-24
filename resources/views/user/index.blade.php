@@ -41,7 +41,6 @@
           </div>
          
         </ul>
-        <form class="d-flex">
 
           <div class="nav-item dropdown text-light mx-4 ">
             <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,16 +49,16 @@
             <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item text-dark" href="{{route('profile.edit')}}">Profile</a></li>
               <hr class="dropdown-divider">
-              <form method="POST" action="{{ route('logout') }}">
+              <form method="POST" action="{{ route('logout') }}" id="logoutForm">
                 @csrf
-                <li><a class="dropdown-item text-dark" href="{{route('logout')}}" onclick="event.preventDefault();
-                     this.closest('form').submit();"> 
-                     Logout </a></li>
+                <li><button class="dropdown-item text-dark"  onclick="document.getElementById('logoutForm').submit()"> 
+                     Logout </button></li>
+              
+
               </form>
               <li>
             </ul>
           </li>
-        </form>
       </div>
     </div>
   </nav>

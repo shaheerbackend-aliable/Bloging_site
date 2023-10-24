@@ -34,4 +34,10 @@ class UploadController extends Controller
         return view('admin.upload');
     }
 
+    public function blog_data()
+    {
+        $list = BlogPost::all();
+        return view('admin.BlogData',get_defined_vars());
+    }
+
 }

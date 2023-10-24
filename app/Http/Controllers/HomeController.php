@@ -11,7 +11,6 @@ class HomeController extends Controller
 {
     public function dashboard()
     {
-        $user = User::where('role')->get();
         $list = BlogPost::all();
         return view('landingpage',get_defined_vars());
     }

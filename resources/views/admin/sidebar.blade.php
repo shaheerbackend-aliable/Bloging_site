@@ -35,4 +35,11 @@
                     <span>Upload Blog</span>
                 </a>
             </li>
+
+            <!-- blog data -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{Route('admin.blog')}}" data-toggle="collapse" data-target="#collapseUtilities" aria-expanded="true" aria-controls="collapseUtilities">
+                    <span>Blog Data</span>
+                </a>
+            </li>
         </ul>
