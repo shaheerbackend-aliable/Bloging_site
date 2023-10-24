@@ -31,7 +31,7 @@ class UploadController extends Controller
          $image->move('post', $imagename);
          $post->image = $imagename;
         $post->save();
-        return view('admin.upload');
+        return redirect()->back();
     }
 
     public function blog_data()
@@ -39,5 +39,36 @@ class UploadController extends Controller
         $list = BlogPost::all();
         return view('admin.BlogData',get_defined_vars());
     }
+
+    public function update_form($id) 
+    {
+      $blog = BlogPost::find($id); 
+      $data= BlogPost::all();
+      return view('admin.UpdateBlog',get_defined_vars());    
+    }
+
+    public function update_blog(Request $req, $id)
+    {
+        $blog = BlogPost::find($id);
+        $blog->heading = $req->heading;
+        $blog->text = $req->text;
+        $image = $req->image;
+        if ($image) {
+            $imagename = time() . '.' . $image->getClientOriginalExtension();
+            //store in public folder "product"
+            $image->move('product', $imagename);
+            $blog->image = $imagename;
+        }
+        $blog->save();
+        return redirect()->back();
+    }
+
+    public function delete_blog($id) 
+    {
+      $blog = BlogPost::find($id); 
+      $blog->delete();
+      return redirect()->back();   
+    }
+    
 
 }

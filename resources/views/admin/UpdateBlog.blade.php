@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Blog Data</title>
+    <title>Admin Panal</title>
 
     <!-- Custom fonts for this template-->
 
@@ -45,36 +45,27 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">My All Blogs</h1>
+                        <h1 class="h3 mb-0 text-gray-800">User Data</h1>
                         <a href="{{Route('admin.upload')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Upload A Blog</a>
                     </div>
-                    <div>
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Heading</th>
-                                    <th scope="col">Text</th>
-                                    <th scope="col">Image</th>
-                                    <th scope="col">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            @foreach($list as $item)
-                                <tr>
-                                    <th scope="row">{{$loop->iteration}}</th>
-                                    <td style="font-weight: bold;">{{$item->heading}}</td>
-                                    <td style="font-size: 1vw;">{{$item->text}}</td>
-                                    <td> <img src="/post/{{$item->image}}" class="w-50" alt=""></td>
-                                    <td>
-                                        <button class="btn btn-success"><a href="{{Route('admin.up_blog',$item->id)}}">Update</a></button>
-                                        <button class="btn btn-danger"><a href="{{Route('admin.delete',$item->id)}}">Delete</a></button>
-                                    </td>
-                                </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
-                    </div>
+                    <form action="{{Route('admin.update',$blog->id)}}" method="post" enctype="multipart/form-data">
+                        @csrf
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Write New Heading</label>
+                            <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" name="heading" value="{{$blog->heading}}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Write Blog</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text">{{$blog->text}}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Upload Any Image</label>
+                            <img src="/post/{{$blog->image}}" alt="No Image Found" class="text_color" style="margin: auto;" height="70px" width="70px">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image">
+                        </div>
+                        <button type="submit" class="btn btn-success">Update Blog</button>
+                    </form>
                 </div>
                 <!-- /.container-fluid -->
 
@@ -97,12 +88,6 @@
     </div>
     <!-- End of Page Wrapper -->
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-
-    <!-- Logout Modal-->
 
 
     <!-- Bootstrap core JavaScript-->
