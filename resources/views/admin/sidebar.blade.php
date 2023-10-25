@@ -1,40 +1,45 @@
 
+
+
 <style>
-        /* CSS for hiding the sidebar by default and showing it when not hidden */
-        .sidebar {
-            width: 250px; /* Adjust the width to your desired sidebar width */
-            transition: transform 0.3s ease;
-        }
+    .sidebar {
+        width: 250px;
+        transition: transform 0.3s ease;
+    }
 
-        .sidebar.sidebar-hidden {
-            transform: translateX(-100%);
-        }
+    .sidebar.sidebar-hidden {
+        transform: translateX(-100%);
+    }
 
-        /* Style for the menu toggle button */
+    .toggle-btn {
+        display: none;
+    }
+
+    @media (max-width: 1024px) {
         .toggle-btn {
-            /* Initially hide the button */
             display: none;
         }
+    }
 
-        .side-bar{display: block;}
-        /* Media query to show the button on screens with max-width 1024px */
-        @media (max-width: 1024px) {
-
-            
-            .toggle-btn {
-                display: block;
-                position: fixed;
-                top: 10px;
-                left: 10px;
-                z-index: 9999;
-                cursor: pointer;
-            }
+    @media (max-width: 991px) {
+        .toggle-btn {
+            display: block;
+            position: fixed;
+            top: 25px;
+            left: 20px;
+            z-index: 9999;
+            cursor: pointer;
         }
-    </style>
+    }
+
+
+</style>
+
+
 
 
     <div class="toggle-btn">
-        <button id="menu-toggle" class="btn btn-primary menu-toggle-button">Toggle Sidebar</button>
+        <button id="menu-toggle" class="btn btn-primary menu-toggle-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
     </div>
 
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
@@ -72,7 +77,6 @@
 
 
             <script>
-        // JavaScript function to toggle the sidebar
         document.addEventListener("DOMContentLoaded", function () {
             const menuToggle = document.getElementById("menu-toggle");
             const sidebar = document.getElementById("sidebar");

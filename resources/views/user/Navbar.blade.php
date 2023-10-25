@@ -8,8 +8,10 @@
       </label>
       <label class="logo">NavBar</label>
       <ul  >
-        <li><a class="active" href="{{Route('user.dashboard')}}">Home</a></li>
-        <li><a href="{{Route('user.blog')}}">Blog</a></li>
+      <li><a class="{{ request()->routeIs('user.dashboard') ? 'active' : '' }}" href="{{ route('user.dashboard') }}">Home</a></li>
+
+        <li><a class="{{ request()->routeIs('user.blog') ? 'active' : '' }}" href="{{ route('user.blog') }}">Blog</a></li>
+
         <li><a href="#">Contact Us</a></li>
         <li class=" profiles text-light ">
           <a class=" dropdown-toggle   " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -36,39 +38,3 @@
 
 
 
-
-
-<!-- 
-  <script>
-
-
-
-
-
-
-
-
-
-
-
-
-function scrollToElement(targetElement) {
-  window.scrollTo({
-    behavior: 'smooth',
-    top: targetElement.offsetTop,
-  });
-}
-
-const contactUsLink = document.querySelector('a[href="#footer"]');
-if (contactUsLink) {
-  contactUsLink.addEventListener('click', function (e) {
-    e.preventDefault();
-    const footerElement = document.getElementById('footer');
-    if (footerElement) {
-      scrollToElement(footerElement);
-    }
-  });
-}
-
-
-</script> -->
