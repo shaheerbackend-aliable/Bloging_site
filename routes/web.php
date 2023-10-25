@@ -42,6 +42,7 @@ Route::middleware('user')->group(function () {
     Route::get('user/blog', [UserController::class, 'blog'])->name('user.blog');
     Route::post('user/contact', [ContactController::class, 'store'])->name('user.contact');
     Route::get('user/blogdetail/{id}', [UserController::class, 'blog_detail'])->name('user.blogdetail');
+    Route::get('user/search', [UserController::class, 'search'])->name('user.search');
 });
 
 Route::get('/message', function () {
