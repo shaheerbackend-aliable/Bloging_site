@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('heading');
             $table->longText('text');
             $table->string('image')->nullable();
+            $table->integer('total_views')->default(0);
             $table->timestamps();
         });
     }

@@ -21,19 +21,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article-content">
-                            <p>{{$content->text}}</p>
-                            <p>{{$content->text}}</p>
-                            <h4>{{$content->heading}}</h4>
-                            <p>{{$content->text}}</p>
-                            <blockquote>
-                                <p>{{$content->text}}</p>
-                                <p class="blockquote-footer">{{$content->text}}<cite title="Source Title">{{$content->text}}</cite></p>
-                            </blockquote>
-                            <p>{{$content->text}}</p>
-                        </div>
                         <div class="nav tag-cloud">
-                            <button class="btn btn-primary">Like</button>
+                            <button class="btn"><a href="{{Route('user.blogdetail',$content->id)}}" style="text-decoration:none;">Read More</a></button>
                           
                         </div>
                     </article>
@@ -90,4 +79,5 @@
             </div>
         </div>
     </div>
+
   

@@ -41,6 +41,7 @@ Route::middleware('user')->group(function () {
     Route::get('user/dashboard', [UserController::class, 'dashboard'])->name('user.dashboard');
     Route::get('user/blog', [UserController::class, 'blog'])->name('user.blog');
     Route::post('user/contact', [ContactController::class, 'store'])->name('user.contact');
+    Route::get('user/blogdetail/{id}', [UserController::class, 'blog_detail'])->name('user.blogdetail');
 });
 
 Route::get('/message', function () {
