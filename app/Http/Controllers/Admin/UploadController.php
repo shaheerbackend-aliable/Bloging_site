@@ -56,7 +56,7 @@ class UploadController extends Controller
         if ($image) {
             $imagename = time() . '.' . $image->getClientOriginalExtension();
             //store in public folder "product"
-            $image->move('product', $imagename);
+            $image->move('post', $imagename);
             $blog->image = $imagename;
         }
         $blog->save();
