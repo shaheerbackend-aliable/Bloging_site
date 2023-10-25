@@ -14,7 +14,7 @@ class UserController extends Controller
     {
         $user = User::where('role','admin')->first();
         $list = BlogPost::all();
-        $desc_data = $list->sortBy('id');
+        $desc_data=BlogPost::orderby('id','desc')->get();
         return view('User.index',get_defined_vars());
     }
 
@@ -22,7 +22,7 @@ class UserController extends Controller
     {
         $user = User::where('role','admin')->first();
         $list = BlogPost::all();
-        $desc_data = $list->sortBy('id');
+        $desc_data=BlogPost::orderby('id','desc')->get();
         return view('User.blog',get_defined_vars());
     }
 
@@ -32,6 +32,15 @@ class UserController extends Controller
       $user = User::where('role','admin')->first();
       $detail = BlogPost::find($id);
       return view('user.blogdetail', get_defined_vars());
+    }
+
+    public function search(Request $req)  
+    {
+        $user = User::where('role','admin')->first();
+        $search_text=$req->search;
+        $list=BlogPost::where('heading','LIKE',"%$search_text%");
+        $desc_data=BlogPost::orderby('id','desc')->get();
+        return view('user.searchdata',get_defined_vars());
     }
 }
 
