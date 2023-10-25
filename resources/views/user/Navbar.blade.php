@@ -58,7 +58,7 @@
         <li><a href="#">Contact Us</a></li>
         <li class=" profiles text-light ">
           <a class=" dropdown-toggle   " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Profile
+          {{ Auth::user()->name }}
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="{{route('profile.edit')}}">Profile</a></li>

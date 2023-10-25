@@ -22,10 +22,14 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="{{ route('home.dashboard') }}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+          @if(auth()->user())
+            <a class="nav-link" href="{{ route('user.blog') }}">Blog</a>
+            @else
+            <a class="nav-link" href="{{ route('login') }}">Blog</a>
+            @endif
           </li>
 
 

@@ -21,7 +21,9 @@
 </head>
 
 <body>
-
+    <!-- navbar start -->
+    @include('admin.navbar')
+    <!-- navbar End -->
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
         <!-- partial:partials/_sidebar.html -->
@@ -90,6 +92,9 @@
     <script src="assets/js/demo_1/dashboard.js"></script>
     <!-- End custom js for this page-->
     <script src="assets/js/shared/jquery.cookie.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/f558cc5ba9.js" crossorigin="anonymous"></script>
     <script>
         (function($) {
             'use strict';

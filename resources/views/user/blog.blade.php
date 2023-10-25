@@ -28,14 +28,13 @@
                             <img src="https://www.bootdey.com/image/800x350/87CEFA/000000" title="" alt="">
                         </div>
                         <div class="article-title">
-                            <h6><a href="#">Lifestyle</a></h6>
                             <h2>They Now Bade Farewell To The Kind But Unseen People</h2>
                             <div class="media">
                                 <div class="avatar">
                                     <img src="https://bootdey.com/img/Content/avatar/avatar1.png" title="" alt="">
                                 </div>
                                 <div class="media-body">
-                                    <label>Rachel Roth</label>
+                                    <label>{{$user->name}}</label>
                                     <span>26 FEB 2020</span>
                                 </div>
                             </div>
