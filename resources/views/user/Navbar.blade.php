@@ -17,12 +17,12 @@
         </li>
       </ul>
 
-      <div class="nav-item dropdown pr-3">
+      <div class="nav-item dropdown m-3">
         <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           {{ Auth::user()->name }}
         </a>
        
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu pr-4">
           <li><a class="dropdown-item" href="{{ route('profile.edit') }}">Profile</a></li>
           <hr class="dropdown-divider">
           <li>
