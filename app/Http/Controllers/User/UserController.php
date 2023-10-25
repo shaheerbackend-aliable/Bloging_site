@@ -22,7 +22,16 @@ class UserController extends Controller
     {
         $user = User::where('role','admin')->first();
         $list = BlogPost::all();
+        $desc_data = $list->sortBy('id');
         return view('User.blog',get_defined_vars());
+    }
+
+    public function blog_detail($id)
+    {
+        BlogPost::find($id)->increment('total_views');
+      $user = User::where('role','admin')->first();
+      $detail = BlogPost::find($id);
+      return view('user.blogdetail', get_defined_vars());
     }
 }
 
