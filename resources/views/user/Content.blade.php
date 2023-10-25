@@ -39,7 +39,11 @@
                     </article>
                     @endforeach
                     <!-- contact us -->
+                    @if(auth()->user())
                     @include('user.contact')
+                    @else
+                    
+                    @endif
                     <!-- End contact us -->
                 </div>
                 <div class="col-lg-4 m-15px-tb blog-aside py-3">

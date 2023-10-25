@@ -1,15 +1,26 @@
 <div class="contact-form article-comment">
                         <h4>Contact Us</h4>
-                        <form id="contact-form" method="POST">
+                        <form action="{{Route('user.contact')}}" method="POST">
+                            @csrf
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input name="Name" id="name" placeholder="Name *" class="form-control" type="text">
+                                        <input name="name" id="name" placeholder="Name *" class="form-control" type="text">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input name="Email" id="email" placeholder="Email *" class="form-control" type="email">
+                                        <input name="email" id="email" placeholder="Email *" class="form-control" type="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input name="subject" id="subject" placeholder="Subject *" class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input name="phone" id="phone" placeholder="Phone *" class="form-control" type="text">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
