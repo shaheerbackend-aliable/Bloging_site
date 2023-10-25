@@ -43,9 +43,27 @@
       <div class="row justify-content-between">
         <div class="col-md-8 order-md-last">
           <div class="row">
-            <div class="col-md-6 text-center">
-              <a class="navbar-brand" href="index.html">Logistica <span>Architecture Agency</span></a>
-            </div>
+          <div class="col-md-6 text-center">
+    <a class="navbar-brand text-large" href="{{ route('user.dashboard') }}">
+        <span style="text-decoration: underline; font-size: 1.2em;">B</span>
+        <span style="text-decoration: underline; font-size: 1.2em;">l</span>
+        <span style="text-decoration: underline; font-size: 1.2em;">o</span>
+        <span style="text-decoration: underline; font-size: 1.2em;">g</span>
+        <span>&nbsp;</span>
+        <span style="text-decoration: underline; font-size: 1.2em;">S</span>
+        <span style="text-decoration: underline; font-size: 1.2em;">i</span>
+        <span style="text-decoration: underline; font-size: 1.2em;">t</span>
+        <span style="text-decoration: underline; font-size: 1.2em;">e</span>
+    </a>
+</div>
+
+
+
+
+
+
+
+
             <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
               <form action="#" class="searchform order-lg-last">
                 <div class="form-group d-flex">
