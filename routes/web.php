@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\UploadController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\User\ContactController;
 use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,6 +40,7 @@ Route::middleware('admin')->group(function () {
 Route::middleware('user')->group(function () {
     Route::get('user/dashboard', [UserController::class, 'dashboard'])->name('user.dashboard');
     Route::get('user/blog', [UserController::class, 'blog'])->name('user.blog');
+    Route::post('user/contact', [ContactController::class, 'store'])->name('user.contact');
 });
 
 Route::get('/message', function () {
