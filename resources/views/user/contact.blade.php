@@ -1,3 +1,5 @@
+
+<section id="contact">
 <div class="contact-form article-comment">
                         <h4>Contact Us</h4>
                         <form action="{{Route('user.contact')}}" method="POST">
@@ -36,3 +38,4 @@
                             </div>
                         </form>
                     </div>
+</section>

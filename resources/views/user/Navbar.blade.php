@@ -12,7 +12,7 @@
 
         <li><a class="{{ request()->routeIs('user.blog') ? 'active' : '' }}" href="{{ route('user.blog') }}">Blog</a></li>
 
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
         <li class=" profiles text-light ">
           <a class=" dropdown-toggle   " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           {{ Auth::user()->name }}
