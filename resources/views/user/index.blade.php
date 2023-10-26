@@ -38,58 +38,7 @@
 
 
   <!-- start social search section -->
-  <div class="social">
-    <div class="container-fluid px-md-5">
-      <div class="row justify-content-between">
-        <div class="col-md-8 order-md-last">
-          <div class="row">
-          <div class="col-md-6 text-center">
-    <a class="navbar-brand text-large" href="{{ route('user.dashboard') }}">
-        <span style="text-decoration: underline; font-size: 1.2em;">B</span>
-        <span style="text-decoration: underline; font-size: 1.2em;">l</span>
-        <span style="text-decoration: underline; font-size: 1.2em;">o</span>
-        <span style="text-decoration: underline; font-size: 1.2em;">g</span>
-        <span>&nbsp;</span>
-        <span style="text-decoration: underline; font-size: 1.2em;">S</span>
-        <span style="text-decoration: underline; font-size: 1.2em;">i</span>
-        <span style="text-decoration: underline; font-size: 1.2em;">t</span>
-        <span style="text-decoration: underline; font-size: 1.2em;">e</span>
-    </a>
-</div>
-
-
-
-
-
-
-
-
-            <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
-              <form action="#" class="searchform order-lg-last">
-                <div class="form-group d-flex">
-                  <input type="text" class="form-control pl-3" placeholder="Search" />
-                  <button type="submit" placeholder="" class="form-control search">
-                    <span class="fa fa-search"></span>
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 d-flex">
-          <div class="social-media">
-            <p class="mb-0 d-flex">
-              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-              <!-- <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a> -->
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
+ @include('user.search')
   <!-- endt social search section -->
 
 

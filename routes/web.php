@@ -50,7 +50,7 @@ Route::middleware('user')->group(function () {
 });
 
 Route::get('/message', function () {
-    return "Ani deya mzaak ae";
+    return view('404');
 })->name("message");
 
 

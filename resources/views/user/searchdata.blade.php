@@ -17,6 +17,7 @@
 <body>
 
 @include('user.Navbar')
+@include('user.search')
 <div class="blog-single gray-bg">
        
     <div class="container">
