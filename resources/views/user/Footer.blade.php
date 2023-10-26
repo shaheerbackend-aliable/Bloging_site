@@ -31,28 +31,18 @@
         <h2 class="footer-heading d-flex align-items-center"><span
             class="icon d-flex align-items-center justify-content-center"><i class="ion-ios-list-box"></i></span>Latest
           News</h2>
+          @foreach($desc_data as $data)
         <div class="block-21 mb-4 d-flex">
-          <a class="img mr-4 rounded" style="background-image: url(images/image_1.jpg);"></a>
+          <a class="img mr-4 rounded" style="background-image: url(/post/{{$data->image}});"></a>
           <div class="text">
-            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
+            <h3 class="heading">{{$data->heading}}</h3>
             <div class="meta">
-              <div><a href="#"><span class="icon-calendar"></span> Oct. 16, 2019</a></div>
-              <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-              <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+              <div><span class="icon-calendar"></span>{{$data->created_at}}</div>
+              <div><span class="icon-person"></span>{{$user->name}}</div>
             </div>
           </div>
         </div>
-        <div class="block-21 mb-4 d-flex">
-          <a class="img mr-4 rounded" style="background-image: url(images/image_2.jpg);"></a>
-          <div class="text">
-            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-            <div class="meta">
-              <div><a href="#"><span class="icon-calendar"></span> Oct. 16, 2019</a></div>
-              <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-              <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-            </div>
-          </div>
-        </div>
+        @endforeach
       </div>
       <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
         <h2 class="footer-heading d-flex align-items-center"><span

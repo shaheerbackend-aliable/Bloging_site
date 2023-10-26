@@ -13,7 +13,7 @@ class HomeController extends Controller
     {
         $user = User::where('role','admin')->first();
         $list = BlogPost::paginate(2);
-        $desc_data = $list->sortBy('id');
+        $desc_data=BlogPost::orderby('id','desc')->paginate(2);
         return view('landingpage',get_defined_vars());
     }
 }
