@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\SubscriberController;
 use App\Http\Controllers\Admin\UploadController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
@@ -36,6 +37,7 @@ Route::middleware('admin')->group(function () {
     Route::get('admin/updateblog/{id}', [UploadController::class, 'update_form'])->name('admin.up_blog');
     Route::post('admin/update/{id}', [UploadController::class, 'update_blog'])->name('admin.update');
     Route::get('admin/delete/{id}', [UploadController::class, 'delete_blog'])->name('admin.delete');
+    Route::get('admin/subscriber', [SubscriberController::class, 'show_data'])->name('admin.subscriber');
 });
 Route::middleware('user')->group(function () {
     Route::get('user/dashboard', [UserController::class, 'dashboard'])->name('user.dashboard');

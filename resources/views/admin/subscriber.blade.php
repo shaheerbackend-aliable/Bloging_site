@@ -1,10 +1,10 @@
-<!DOCTYPE html? ?html lang=?en?? <head>
-<!-- Required meta tags --?
-    ?meta charset=?utf-8??
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Star Admin Premium Bootstrap Admin Dashboard Template</title>
-      <!-- plugins:css -->
-<link rel="stylesheet" href="adminstyle.scss" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="adminstyle.scss" />
 <link rel="stylesheet" href="assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
 <link rel="stylesheet" href="assets/vendors/iconfonts/ionicons/dist/css/ionicons.css">
 <link rel="stylesheet" href="assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
@@ -19,10 +19,9 @@
 <!-- End Layout styles -->
 <link rel="shortcut icon" href="assets/images/favicon.ico" />
 </head>
-
 <body>
-    <!-- navbar start -->
-    @include('admin.navbar')
+     <!-- navbar start -->
+     @include('admin.navbar')
     <!-- navbar End -->
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
@@ -118,9 +117,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/f558cc5ba9.js" crossorigin="anonymous"></script>
-    
-
 
 </body>
-
 </html>

@@ -6,13 +6,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+        <li class="nav-item mx-3">
           <a class="nav-link {{ request()->routeIs('user.dashboard') ? 'active' : '' }}" href="{{ route('user.dashboard') }}">Home</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mx-3">
           <a class="nav-link {{ request()->routeIs('user.blog') ? 'active' : '' }}" href="{{ route('user.blog') }}">Blog</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mx-3">
           <a class="nav-link" href="#contact" aria-disabled="true">Contact Us</a>
         </li>
       </ul>
