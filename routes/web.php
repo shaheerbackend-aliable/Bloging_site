@@ -38,7 +38,7 @@ Route::middleware('admin')->group(function () {
     Route::post('admin/update/{id}', [UploadController::class, 'update_blog'])->name('admin.update');
     Route::get('admin/delete/{id}', [UploadController::class, 'delete_blog'])->name('admin.delete');
     Route::get('admin/subscriber', [SubscriberController::class, 'show_data'])->name('admin.subscriber');
-    Route::get('admin/delete/subscriber/{id}', [UploadController::class, 'delete_blog'])->name('admin.deletesub');
+    Route::get('admin/delete/subscriber/{id}', [SubscriberController::class, 'delete_sub'])->name('admin.deletesub');
 });
 Route::middleware('user')->group(function () {
     Route::get('user/dashboard', [UserController::class, 'dashboard'])->name('user.dashboard');
