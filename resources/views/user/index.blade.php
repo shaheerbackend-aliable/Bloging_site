@@ -17,7 +17,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
 
-<body>
+<body style="background-color:#f5f5f5">
   @if(Session::has('success'))
   <div class="alert alert-success">
     {{Session::get('success')}}
@@ -26,14 +26,14 @@
   <!-- start topbar content -->
 
   @include('user.Navbar')
-
-
-
+  
+  
+  
   <!-- end topbar content-->
-
-
-
-
+  
+  
+  
+  
 
 
 
@@ -116,6 +116,16 @@
   <!-- ==================end crauosal ================ -->
 
 
+
+
+
+
+
+  <!-- ====cards start== -->
+  
+  @include('user.cards')
+
+<!-- ====cards end== -->
 
   <!-- ==================start content ================ -->
 
