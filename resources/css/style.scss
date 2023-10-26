@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/optician-sans');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +7,6 @@
 }
 
 body {
-    font-family: monospace;
     overflow-x: hidden;
 }
 
@@ -239,7 +238,7 @@ body {
 .form-control {
     height: 50px !important;
     background: #fff !important;
-    color: #000 !important;
+    color: #000000 !important;
     font-size: 14px;
     border-radius: 0px;
     -webkit-box-shadow: none !important;
@@ -248,7 +247,7 @@ body {
 }
 
 .form-control:focus, .form-control:active {
-    border-color: #000;
+    border-color: #000000;
 }
 
 .nav-item .dropdown-menu {
@@ -468,7 +467,7 @@ body {
 .form-control {
   height: 52px;
   background: #fff;
-  color: #000;
+  color: #000000;
   font-size: 18px;
   border-radius: 0px;
   -webkit-box-shadow: none;
@@ -501,7 +500,7 @@ textarea.form-control {
   line-height: 1.4;
 }
 .block-21 .text .heading a {
-  color: #000;
+  color: #000000;
 }
 .block-21 .text .heading a:hover,
 .block-21 .text .heading a:active,
@@ -558,33 +557,38 @@ textarea.form-control {
   
   .footer-09 {
     background: #fff;
-    background: -moz-linear-gradient(45deg, #2a1a5e 0%, #5126a7 100%);
-    background: -webkit-gradient(
-      left bottom,
-      right top,
-      color-stop(0%, #2a1a5e),
-      color-stop(100%, #5126a7)
-    );
-    background: -webkit-linear-gradient(45deg, #2a1a5e 0%, #5126a7 100%);
-    background: -o-linear-gradient(45deg, #2a1a5e 0%, #5126a7 100%);
-    background: -ms-linear-gradient(45deg, #2a1a5e 0%, #5126a7 100%);
-    background: linear-gradient(45deg, #2a1a5e 0%, #5126a7 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a1a5e', endColorstr='#5126a7', GradientType=1 );
+    // background: -moz-linear-gradient(45deg, #2a1a5e 0%, #5126a7 100%);
+    // background: -webkit-gradient(
+    //   left bottom,
+    //   right top,
+    //   color-stop(0%, #2a1a5e),
+    //   color-stop(100%, #5126a7)
+    // );
+    // background: -webkit-linear-gradient(45deg, #2a1a5e 0%, #5126a7 100%);
+    // background: -o-linear-gradient(45deg, #2a1a5e 0%, #5126a7 100%);
+    // background: -ms-linear-gradient(45deg, #2a1a5e 0%, #5126a7 100%);
+    // background: linear-gradient(45deg, #2a1a5e 0%, #5126a7 100%);
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2a1a5e', endColorstr='#5126a7', GradientType=1 );
   }
   .footer-09 .border-top {
     border-color: rgba(255, 255, 255, 0.1) !important;
+    background-color: #02624f;
+    color: #e6e6e6;
   }
   .footer-09 a {
-    color: #fe59d7;
+    font-family: 'Optician Sans', sans-serif;
+    color: #000000;
   }
   .footer-09 a:hover {
+    
     color: rgba(255, 255, 255, 0.9);
   }
   .footer-09 p {
-    color: rgba(255, 255, 255, 0.3);
+    color: #000000;
+    font-family: 'Optician Sans', sans-serif;
   }
   .footer-09 .footer-heading {
-    color: #fff;
+    color:#000000;
     font-size: 22px;
     margin-bottom: 30px;
   }
@@ -594,20 +598,20 @@ textarea.form-control {
     border-radius: 50%;
     height: 40px;
     display: block;
-    color: #fe59d7;
-    border: 1px solid #fe59d7;
+    color: #000000;
+    border: 1px solid #02624f;
   }
   .footer-09 ul.list-unstyled li a {
-    color: rgba(255, 255, 255, 0.5);
+    color: #000000;
   }
   .footer-09 .block-21 .heading a {
-    color: rgba(255, 255, 255, 0.5);
+    color: #000000;
   }
   .footer-09 .block-21 .meta div a {
-    color: rgba(255, 255, 255, 0.3);
+    color: #000000;
   }
   .footer-09 .block-23 ul li {
-    color: rgba(255, 255, 255, 0.5);
+    color: #000000;
   }
   .footer-09 .subscribe-form .form-group {
     position: relative;
@@ -616,27 +620,28 @@ textarea.form-control {
   }
   .footer-09 .subscribe-form .form-group input {
     background: rgba(0, 0, 0, 0.05) !important;
-    border: 2px solid #fe8ce3 !important;
+    border: 2px solid #02624f !important;
     outline: none !important;
-    color: rgba(255, 255, 255, 0.3) !important;
+    color:#000000;
+    // color: #000000 !important;
     font-size: 16px;
     border-radius: 0;
   }
   .footer-09 .subscribe-form .form-group input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: rgba(255, 255, 255, 0.3) !important;
+    color: #000000 !important;
   }
   .footer-09 .subscribe-form .form-group input::-moz-placeholder {
     /* Firefox 19+ */
-    color: rgba(255, 255, 255, 0.3) !important;
+    color: #000000 !important;
   }
   .footer-09 .subscribe-form .form-group input:-ms-input-placeholder {
     /* IE 10+ */
-    color: rgba(255, 255, 255, 0.3) !important;
+    color: #000000 !important;
   }
   .footer-09 .subscribe-form .form-group input:-moz-placeholder {
     /* Firefox 18- */
-    color: rgba(255, 255, 255, 0.3) !important;
+    color: #000000 !important;
   }
   .footer-09 .subscribe-form .form-group input:focus {
     outline: none !important;
@@ -649,7 +654,7 @@ textarea.form-control {
     width: 52px;
     height: 52px;
     font-size: 16px;
-    background: #fe8ce3 !important;
+    background: #02624f !important;
     border: none;
     border-radius: 0;
   }
@@ -658,4 +663,6 @@ textarea.form-control {
     text-decoration: none !important;
     outline: none !important;
   }
-  
+  .footer-09 .footer-content{
+    padding: 7em 0;
+  }
