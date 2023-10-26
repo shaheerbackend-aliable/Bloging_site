@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Poppins&display=swap');
 @import url('https://fonts.cdnfonts.com/css/optician-sans');
+@import url("https://fonts.cdnfonts.com/css/the-rift");
 * {
     box-sizing: border-box;
     margin: 0;
@@ -238,7 +239,7 @@ body {
 .form-control {
     height: 50px !important;
     background: #fff !important;
-    color: #000000 !important;
+    color: #101010 !important;
     font-size: 14px;
     border-radius: 0px;
     -webkit-box-shadow: none !important;
@@ -247,7 +248,7 @@ body {
 }
 
 .form-control:focus, .form-control:active {
-    border-color: #000000;
+    border-color: #101010;
 }
 
 .nav-item .dropdown-menu {
@@ -474,7 +475,7 @@ body {
 .form-control {
   height: 52px;
   background: #fff;
-  color: #000000;
+  color: #101010;
   font-size: 18px;
   border-radius: 0px;
   -webkit-box-shadow: none;
@@ -502,12 +503,13 @@ textarea.form-control {
   width: calc(100% - 100px);
 }
 .block-21 .text .heading {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.4;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
 }
 .block-21 .text .heading a {
-  color: #000000;
+    text-decoration: none;
+  color: #101010;
 }
 .block-21 .text .heading a:hover,
 .block-21 .text .heading a:active,
@@ -558,9 +560,9 @@ textarea.form-control {
 
 
 
-// footer {
-//     padding: 7em 0;
-//   }
+footer {
+    padding: 7em 0 0 0 ;
+  }
   
   .footer-09 {
     background: #fff;
@@ -584,18 +586,18 @@ textarea.form-control {
   }
   .footer-09 a {
     font-family: 'Optician Sans', sans-serif;
-    color: #000000;
+    color: #101010;
   }
   .footer-09 a:hover {
     
-    color: rgba(255, 255, 255, 0.9);
+   color: #02624f; 
   }
   .footer-09 p {
-    color: #000000;
+    color: #101010;
     font-family: 'Optician Sans', sans-serif;
   }
   .footer-09 .footer-heading {
-    color:#000000;
+    color:#101010;
     font-size: 22px;
     margin-bottom: 30px;
   }
@@ -605,20 +607,20 @@ textarea.form-control {
     border-radius: 50%;
     height: 40px;
     display: block;
-    color: #000000;
+    color: #101010;
     border: 1px solid #02624f;
   }
   .footer-09 ul.list-unstyled li a {
-    color: #000000;
+    color: #101010;
   }
   .footer-09 .block-21 .heading a {
-    color: #000000;
+    color: #101010;
   }
   .footer-09 .block-21 .meta div a {
-    color: #000000;
+    color: #101010;
   }
   .footer-09 .block-23 ul li {
-    color: #000000;
+    color: #101010;
   }
   .footer-09 .subscribe-form .form-group {
     position: relative;
@@ -629,26 +631,26 @@ textarea.form-control {
     background: rgba(0, 0, 0, 0.05) !important;
     border: 2px solid #02624f !important;
     outline: none !important;
-    color:#000000;
-    // color: #000000 !important;
+    color:#101010;
+    // color: #101010 !important;
     font-size: 16px;
     border-radius: 0;
   }
   .footer-09 .subscribe-form .form-group input::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    color: #000000 !important;
+    color: #101010 !important;
   }
   .footer-09 .subscribe-form .form-group input::-moz-placeholder {
     /* Firefox 19+ */
-    color: #000000 !important;
+    color: #101010 !important;
   }
   .footer-09 .subscribe-form .form-group input:-ms-input-placeholder {
     /* IE 10+ */
-    color: #000000 !important;
+    color: #101010 !important;
   }
   .footer-09 .subscribe-form .form-group input:-moz-placeholder {
     /* Firefox 18- */
-    color: #000000 !important;
+    color: #101010 !important;
   }
   .footer-09 .subscribe-form .form-group input:focus {
     outline: none !important;
@@ -670,6 +672,67 @@ textarea.form-control {
     text-decoration: none !important;
     outline: none !important;
   }
-  .footer-09 .footer-content{
-    padding: 7em 0;
+ 
+  .footer-09 .social-media-footer{
+background-color: #000;
+// padding: 50px;
+
+  } .footer-09 .social-media-footer .footer-icon{
+background-color: #fff;
+padding: 50px;
+border-radius: 50px;
+
   }
+
+
+
+
+//   cards-css========
+.details-card{
+
+    margin-top: 4em;
+    // padding: 20px 0 0 0;
+    background-color: #f5f5f5;
+}
+.details-card .card-content{
+
+    // margin-top: 4em;
+
+    padding-bottom: 34px;
+    background-color: #fff;
+}
+
+
+
+
+
+.details-card .card-content .card-desc .btn-card{
+    font-family: 'The Rift', sans-serif;    line-height: 25px;
+    
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #02624f;
+    font-family: 'The Rift', sans-serif;    line-height: 25px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.3s;
+    
+    overflow: hidden;
+    border-bottom: 1px solid #02624f;
+    position: relative;
+    padding-bottom: 8px!important;
+    
+ 
+}.details-card .card-content .card-desc .btn-card::before{
+
+    
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #02624f;
+    width: 0%;
+    transition: 350ms width cubic-bezier(.38,.01,.43,.16);
+}

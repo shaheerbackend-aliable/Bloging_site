@@ -1,17 +1,17 @@
-<footer class="footer-09">
+<footer class="footer-09 container-fluid">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-lg-3 footer-content">
+      <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
         <h2 class="footer-heading d-flex">
-          <span class="icon d-flex align-items-center justify-content-center"><i class="fa fa-info-circle"></i></span>
+          <span class="icon d-flex align-items-center justify-content-center"><i class="ion-logo-ionic"></i></span>
           About
         </h2>
         <div class="block-23 mb-3">
           <ul>
-            <li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco,
+            <li><span class="icon ion-ios-pin"></span><span class="text">203 Fake St. Mountain View, San Francisco,
                 California, USA</span></li>
-            <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-            <li><a href="#"><span class="icon fa fa-send"></span><span class="text">info@yourdomain.com</span></a>
+            <li><a href="#"><span class="icon ion-ios-call"></span><span class="text">+2 392 3929 210</span></a></li>
+            <li><a href="#"><span class="icon ion-ios-send"></span><span class="text">info@yourdomain.com</span></a>
             </li>
           </ul>
         </div>
@@ -23,11 +23,11 @@
             <input type="text" name="user" style="display: none;" value="{{auth()->user()->name}}">
             @endif
             <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i
-                class="fa-light fa-envelope"></i></button>
+                class="ion-ios-send"></i></button>
           </div>
         </form>
       </div>
-      <div class="col-md-6 col-lg-3 footer-content footer-contentnt">
+      <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
         <h2 class="footer-heading d-flex align-items-center"><span
             class="icon d-flex align-items-center justify-content-center"><i class="ion-ios-list-box"></i></span>Latest
           News</h2>
@@ -54,7 +54,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3 footer-content">
+      <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
         <h2 class="footer-heading d-flex align-items-center"><span
             class="icon d-flex align-items-center justify-content-center"><i
               class="ion-ios-document"></i></span>Information</h2>
@@ -66,40 +66,39 @@
           <li><a href="#" class="py-1 d-block">Help &amp; Support</a></li>
         </ul>
       </div>
-      <div class="col-md-6 col-lg-3 footer-content">
+      <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
         <h2 class="footer-heading d-flex align-items-center"><span
-            class="icon d-flex align-items-center justify-content-center"><i class="fa fa-user"></i></span>Follow US
-        </h2>
-        <div class="col-md-4 d-flex">
-          <div class="social-media-footer">
-            <p class="mb-0 d-flex">
-              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i
-                    class="sr-only">Facebook</i></span></a>
-              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i
-                    class="sr-only">Twitter</i></span></a>
-              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i
-                    class="sr-only">Instagram</i></span></a>
-              <!-- <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a> -->
-            </p>
+            class="icon d-flex align-items-center justify-content-center"><i
+              class="ion-logo-instagram"></i></span>Instagram</h2>
+        <div class="block-24">
+          <div class="row no-gutters">
+            <div class="col-4 col-md-4 p-1">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="col-4 col-md-4 p-1">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+            <div class="col-4 col-md-4 p-1">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </div>
+           
+
           </div>
         </div>
-
       </div>
     </div>
-  </div>
-</div>
-<div class="row  px-4 pt-4 border-top">
-  <div class="col-md-6 col-lg-8">
-    <p class="copyright text-light">
-      Copyright &copy;
-      <script>document.write(new Date().getFullYear());</script> All rights reserved.
-    </p>
-  </div>
-  <div class="col-md-6 col-lg-4 text-md-right">
-    <p class="copyright text-light">Made By <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="#"
-    target="_blank">Acute Dev</a>
-  </p>
-</div>
-</div>
+    <div class="row mt-5 pt-4 border-top">
+      <div class="col-md-6 col-lg-8">
+        <p class="copyright">
+          Copyright &copy;
+          <script>document.write(new Date().getFullYear());</script> All rights reserved.
+        </p>
+      </div>
+      <div class="col-md-6 col-lg-4 text-md-right">
+        <p class="copyright">This template is made with <i class="ion-ios-heart" aria-hidden="true"></i> by <a href="#"
+            target="_blank">Acute Dev</a>
+        </p>
+      </div>
+    </div>
   </div>
 </footer>
