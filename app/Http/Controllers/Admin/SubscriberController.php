@@ -21,6 +21,13 @@ class SubscriberController extends Controller
     $sub->email = $req->email;
     $sub->user_name = $req->user;
     $sub->save();
-    return redirect()->back()->with('Thanks for subscribing in our page!!');
+    return redirect()->back();
+  }
+
+  public function delete_sub($id)
+  {
+    $delete = Subscriber::find($id); 
+    $delete->delete();
+    return redirect()->back();  
   }
 }
