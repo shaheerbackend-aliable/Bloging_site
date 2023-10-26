@@ -38,6 +38,7 @@ Route::middleware('admin')->group(function () {
     Route::post('admin/update/{id}', [UploadController::class, 'update_blog'])->name('admin.update');
     Route::get('admin/delete/{id}', [UploadController::class, 'delete_blog'])->name('admin.delete');
     Route::get('admin/subscriber', [SubscriberController::class, 'show_data'])->name('admin.subscriber');
+    Route::get('admin/delete/subscriber/{id}', [UploadController::class, 'delete_blog'])->name('admin.deletesub');
 });
 Route::middleware('user')->group(function () {
     Route::get('user/dashboard', [UserController::class, 'dashboard'])->name('user.dashboard');
@@ -45,6 +46,7 @@ Route::middleware('user')->group(function () {
     Route::post('user/contact', [ContactController::class, 'store'])->name('user.contact');
     Route::get('user/blogdetail/{id}', [UserController::class, 'blog_detail'])->name('user.blogdetail');
     Route::get('user/search', [UserController::class, 'search'])->name('user.search');
+    Route::post('user/subscriber', [SubscriberController::class, 'send_data'])->name('user.subscriber');
 });
 
 Route::get('/message', function () {

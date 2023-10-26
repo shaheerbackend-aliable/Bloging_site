@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="adminstyle.scss" />
 <link rel="stylesheet" href="admin2.scss" />
 <link rel="stylesheet" href="style.scss" />
+<title>Admin Panel</title>
 
 <!-- End Layout styles -->
 <link rel="shortcut icon" href="assets/images/favicon.ico" />

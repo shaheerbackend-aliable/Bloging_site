@@ -15,9 +15,13 @@
             </li>
           </ul>
         </div>
-        <form action="#" class="subscribe-form">
+        <form action="{{Route('user.subscriber')}}" method="post" class="subscribe-form">
+          @csrf
           <div class="form-group d-flex">
-            <input type="text" class="form-control rounded-left" placeholder="Enter email address">
+            <input type="text" name="email" class="form-control rounded-left" placeholder="Enter email address">
+            @if(auth()->user())
+            <input type="text" name="user" style="display: none;" value="{{auth()->user()->name}}">
+            @endif
             <button type="submit" class="form-control submit rounded-right"><span class="sr-only">Submit</span><i
                 class="fa-light fa-envelope"></i></button>
           </div>
