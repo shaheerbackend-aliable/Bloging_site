@@ -23,6 +23,7 @@
            @include('user.Content')
         </div>
     </div>
+    
 <!-- Footer -->
 @include('user.Footer')
 <!-- Footer -->

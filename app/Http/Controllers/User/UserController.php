@@ -13,7 +13,7 @@ class UserController extends Controller
     public function dashboard()
     {
         $user = User::where('role','admin')->first();
-        $list = BlogPost::all();
+        $list = BlogPost::paginate(2);
         $desc_data=BlogPost::orderby('id','desc')->get();
         return view('User.index',get_defined_vars());
     }
@@ -21,7 +21,7 @@ class UserController extends Controller
     public function blog()
     {
         $user = User::where('role','admin')->first();
-        $list = BlogPost::all();
+        $list = BlogPost::paginate(2);
         $desc_data=BlogPost::orderby('id','desc')->get();
         return view('User.blog',get_defined_vars());
     }
@@ -38,7 +38,7 @@ class UserController extends Controller
     {
         $user = User::where('role','admin')->first();
         $search_text=$req->search;
-        $list=BlogPost::where('heading','LIKE',"%$search_text%");
+        $list=BlogPost::where('heading','LIKE',"%$search_text%")->get();
         $desc_data=BlogPost::orderby('id','desc')->get();
         return view('user.searchdata',get_defined_vars());
     }
