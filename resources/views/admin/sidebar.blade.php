@@ -1,7 +1,7 @@
 
 
 
-<style>
+<!-- <style>
     .sidebar {
         width: 250px;
         transition: transform 0.3s ease;
@@ -33,15 +33,12 @@
     }
 
 
-</style>
+</style> -->
 
 
 
 
-    <div class="toggle-btn">
-        <button id="menu-toggle" class="btn btn-primary menu-toggle-button"><i class="fa fa-bars" aria-hidden="true"></i></button>
-    </div>
-
+    
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item nav-profile">
@@ -84,7 +81,7 @@
             </nav>
 
 
-            <script>
+            <!-- <script>
         document.addEventListener("DOMContentLoaded", function () {
             const menuToggle = document.getElementById("menu-toggle");
             const sidebar = document.getElementById("sidebar");
@@ -95,4 +92,4 @@
                 });
             }
         });
-    </script>
+    </script> -->
