@@ -12,7 +12,7 @@
                         <h2>{{$content->heading}}</h2>
                         <div class="media">
                             <div class="avatar">
-                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" title="" alt="">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" title="" alt="">
                             </div>
                             <div class="media-body">
                                 <label>{{$user->name}}</label>
@@ -25,8 +25,10 @@
 
                     </div>
                 </article>
-               
                 @endforeach
+                <div class="justify-center">
+                {!! $list->links() !!}
+                </div>
                 <!-- contact us -->
                 @if(auth()->user())
                 @include('user.contact')

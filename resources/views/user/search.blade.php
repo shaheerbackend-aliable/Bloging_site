@@ -8,6 +8,7 @@
             </div>
             <div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
               <form action="{{Route('user.search')}}" method="get" class="searchform order-lg-last">
+                @csrf
               <div class="form-group d-flex">
                   <input type="text" class="form-control pl-3" placeholder="Search" name="search"/>
                   <button type="submit" placeholder="" class="form-control search">
