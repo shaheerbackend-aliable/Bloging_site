@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="adminstyle.scss" />
 <link rel="stylesheet" href="assets/css/shared/style.css">
 <!-- endinject -->
+<title>Update Blog</title>
 <!-- Layout styles -->
 <link rel="stylesheet" href="assets/css/demo_1/style.css">
 <!-- End Layout styles -->

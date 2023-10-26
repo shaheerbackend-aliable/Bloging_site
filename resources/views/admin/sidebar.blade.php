@@ -45,8 +45,9 @@
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item nav-profile">
-                        <a href="#" class="nav-link">
-                        </a>
+                    <a href="{{Route('admin.dashboard')}}" class="nav-link">
+                        Admin Panel
+                    </a>
                     </li>
                     <li class="nav-item nav-category">Main Menu</li>
                     <li class="nav-item">

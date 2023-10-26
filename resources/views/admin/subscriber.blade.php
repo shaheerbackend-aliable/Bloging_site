@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Subscriber Data</title>
     <link rel="stylesheet" href="adminstyle.scss" />
 <link rel="stylesheet" href="assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
 <link rel="stylesheet" href="assets/vendors/iconfonts/ionicons/dist/css/ionicons.css">
@@ -43,27 +43,26 @@
                             <div class="col-lg-12 col-sm-12  stretch-card">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="card-title">User Data</h4>
+                                        <h4 class="card-title">Subscriber Data</h4>
 
                                         <div class="table-responsive">
                                             <table class="table table-hover">
                                                 <thead>
                                                     <tr>
                                                         <th>#</th>
-                                                        <th>Heading</th>
-                                                        <th>Image</th>
+                                                        <th>User Name</th>
+                                                        <th>Email</th>
                                                         <th>Action</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    @foreach($list as $item)
+                                                    @foreach($sub_data as $item)
                                                     <tr>
                                                         <td>{{$loop->iteration}}</td>
-                                                        <td style="font-weight: bold;">{{$item->heading}}</td>
-                                                        <td><img src="/post/{{$item->image}}" alt="Image error"></td>
+                                                        <td style="font-weight: bold;">{{$item->user_name}}</td>
+                                                        <td>{{$item->email}}</td>
                                                         <td>
-                                                            <button class="btn btn-success"><a href="{{Route('admin.up_blog',$item->id)}}">Update</a></button>
-                                                            <button class="btn btn-danger"><a href="{{Route('admin.delete',$item->id)}}">Delete</a></button>
+                                                            <button class="btn btn-danger"><a href="{{Route('admin.deletesub',$item->id)}}">Delete</a></button>
                                                         </td>
                                                     </tr>
                                                     @endforeach
