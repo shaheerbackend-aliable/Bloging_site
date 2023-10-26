@@ -3,15 +3,15 @@
     <div class="row">
       <div class="col-md-6 col-lg-3 footer-content">
         <h2 class="footer-heading d-flex">
-          <span class="icon d-flex align-items-center justify-content-center"><i class="ion-logo-ionic"></i></span>
+          <span class="icon d-flex align-items-center justify-content-center"><i class="fa fa-info-circle"></i></span>
           About
         </h2>
         <div class="block-23 mb-3">
           <ul>
-            <li><span class="icon ion-ios-pin"></span><span class="text">203 Fake St. Mountain View, San Francisco,
+            <li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco,
                 California, USA</span></li>
-            <li><a href="#"><span class="icon ion-ios-call"></span><span class="text">+2 392 3929 210</span></a></li>
-            <li><a href="#"><span class="icon ion-ios-send"></span><span class="text">info@yourdomain.com</span></a>
+            <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+            <li><a href="#"><span class="icon fa fa-send"></span><span class="text">info@yourdomain.com</span></a>
             </li>
           </ul>
         </div>
