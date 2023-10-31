@@ -41,8 +41,7 @@
 
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">User Data</h1>
-    <a href="{{Route('admin.upload')}}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Upload A Blog</a>
+    <h1 class="h3 mb-0 text-gray-800">Update Blog</h1>
 </div>
 <form action="{{Route('admin.update',$blog->id)}}" method="post" enctype="multipart/form-data">
     @csrf
@@ -52,9 +51,11 @@
     </div>
 
     <div class="form-group">
-        <label for="exampleFormControlTextarea1">Description</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text">{{$blog->text}}</textarea>
-    </div>  <div class="form-group">
+        <label for="exampleFormControlTextarea1">Add Some description about Blog</label>
+        <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" name="description" value="{{$blog->description}}">
+    </div>
+
+      <div class="form-group">
         <label for="exampleFormControlTextarea1">Write Blog</label>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text">{{$blog->text}}</textarea>
     </div>
