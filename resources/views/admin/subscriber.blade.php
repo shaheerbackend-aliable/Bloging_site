@@ -63,7 +63,7 @@
                                                         <td style="font-weight: bold;">{{$item->user_name}}</td>
                                                         <td>{{$item->email}}</td>
                                                         <td>
-                                                            <button class="btn btn-danger"><a href="{{Route('admin.deletesub',$item->id)}}">Delete</a></button>
+                                                            <button class="btn btn-danger"><a href="{{Route('admin.deletesub',$item->id)}}" style="text-decoration:none; color:#fff;">Delete</a></button>
                                                         </td>
                                                     </tr>
                                                     @endforeach
