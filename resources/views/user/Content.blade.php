@@ -20,10 +20,15 @@
                             </div>
                         </div>
                     </div>
+                    @if(auth()->user())
                     <div class="nav tag-cloud">
                         <button class="btn"><a href="{{Route('user.blogdetail',$content->id)}}" style="text-decoration:none;">Read More</a></button>
-
                     </div>
+                    @else
+                    <div class="nav tag-cloud">
+                        <button class="btn"><a href="{{Route('login')}}" style="text-decoration:none;">Read More</a></button>
+                    </div>
+                    @endif
                 </article>
                 @endforeach
                 <div class="justify-center">

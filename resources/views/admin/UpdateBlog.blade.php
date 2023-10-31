@@ -42,6 +42,7 @@
                 <!-- Page Title Header Ends-->
                 <div class="container-fluid">
 
+<<<<<<< HEAD
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">User Data</h1>
@@ -74,6 +75,36 @@
                         <button type="submit" class="btn btn-success">Update Blog</button>
                     </form>
                 </div>
+=======
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Update Blog</h1>
+</div>
+<form action="{{Route('admin.update',$blog->id)}}" method="post" enctype="multipart/form-data">
+    @csrf
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Write New Heading</label>
+        <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" name="heading" value="{{$blog->heading}}">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Add Some description about Blog</label>
+        <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" name="description" value="{{$blog->description}}">
+    </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Write Blog</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text">{{$blog->text}}</textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlFile1">Upload Any Image</label>
+        <img src="/post/{{$blog->image}}" alt="No Image Found" class="text_color" style="margin: auto;" height="70px" width="70px">
+        <input type="file" class="form-control-file" id="exampleFormControlFile1" name="image">
+    </div>
+    <button type="submit" class="btn btn-success">Update Blog</button>
+</form>
+</div>
+>>>>>>> 55d3cb99065dc893288570c11c6040ea383c1525
 
 
                 <!-- content-wrapper ends -->

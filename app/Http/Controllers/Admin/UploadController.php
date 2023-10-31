@@ -20,10 +20,12 @@ class UploadController extends Controller
         $post = new BlogPost();
         $req->validate([
             'heading' => 'required',
+            'description' => 'required',
             'text' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
         $post->heading = $req->heading;
+        $post->description = $req->description;
         $post->text = $req->text;
          //upload image:
          $image = $req->image;
@@ -53,6 +55,7 @@ class UploadController extends Controller
     {
         $blog = BlogPost::find($id);
         $blog->heading = $req->heading;
+        $blog->description = $req->description;
         $blog->text = $req->text;
         $image = $req->image;
         if ($image) {

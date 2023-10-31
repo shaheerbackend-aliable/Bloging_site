@@ -60,6 +60,7 @@ color: #fff
                                                     <tr>
                                                         <th>#</th>
                                                         <th>Heading</th>
+                                                        <th>Description</th>
                                                         <th>Image</th>
                                                         <th>Action</th>
                                                     </tr>
@@ -69,6 +70,7 @@ color: #fff
                                                     <tr>
                                                         <td>{{$loop->iteration}}</td>
                                                         <td style="font-weight: bold;">{{$item->heading}}</td>
+                                                        <td>{{$item->description}}</td>
                                                         <td><img src="/post/{{$item->image}}" alt="Image error"></td>
                                                         <td>
                                                             <button class="btn btn-success btn-update"><a href="{{Route('admin.up_blog',$item->id)}}">Update</a></button>
