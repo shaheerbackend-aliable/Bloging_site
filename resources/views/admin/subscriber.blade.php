@@ -20,6 +20,7 @@
 <link rel="shortcut icon" href="assets/images/favicon.ico" />
 </head>
 <body>
+@include('sweetalert::alert')
      <!-- navbar start -->
      @include('admin.navbar')
     <!-- navbar End -->

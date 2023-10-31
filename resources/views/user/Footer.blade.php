@@ -1,7 +1,7 @@
 <footer class="footer-09 ">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+    <div class="row justify-space-between">
+      <div class="col-md-6 col-lg-4 mb-md-0 mb-4">
         <h2 class="footer-heading d-flex">
           <span class="icon d-flex align-items-center justify-content-center"><i class="fa fa-user"></i></span>
           About
@@ -27,7 +27,7 @@
           </div>
         </form>
       </div>
-      <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+      <div class="col-md-6 col-lg-4 mb-md-0 mb-4">
         <h2 class="footer-heading d-flex align-items-center"><span
             class="icon d-flex align-items-center justify-content-center"><i class="fa fa-sticky-note-o"></i></span>Latest
           News</h2>
@@ -44,7 +44,7 @@
         </div>
         @endforeach
       </div>
-      <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+      <!-- <div class="col-md-6 col-lg-4 mb-md-0 mb-4">
         <h2 class="footer-heading d-flex align-items-center"><span
             class="icon d-flex align-items-center justify-content-center"><i
               class="fa fa-info-circle"></i></span>Information</h2>
@@ -55,8 +55,8 @@
           <li><a href="#" class="py-1 d-block">Contact</a></li>
           <li><a href="#" class="py-1 d-block">Help &amp; Support</a></li>
         </ul>
-      </div>
-      <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+      </div> -->
+      <div class="col-md-6 col-lg-4 mb-md-0 mb-4">
         <h2 class="footer-heading d-flex align-items-center"><span
             class="icon d-flex align-items-center justify-content-center"><i
               class="fa fa-user"></i></span>Follow Us</h2>
@@ -91,3 +91,4 @@
       </div>
     </div>
   </div>
+</footer>

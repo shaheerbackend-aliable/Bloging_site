@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\BlogPost;
 use App\Models\User;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class UploadController extends Controller
 {
@@ -31,6 +32,7 @@ class UploadController extends Controller
          $image->move('post', $imagename);
          $post->image = $imagename;
         $post->save();
+        Alert::success('Blog Uploaded Successfully!!');
         return redirect()->back();
     }
 
@@ -60,6 +62,7 @@ class UploadController extends Controller
             $blog->image = $imagename;
         }
         $blog->save();
+        Alert::success('Blog Updated Successfully!!');
         return redirect()->back();
     }
 
@@ -67,6 +70,7 @@ class UploadController extends Controller
     {
       $blog = BlogPost::find($id); 
       $blog->delete();
+      Alert::success('Blog deleted!!');
       return redirect()->back();   
     }
     
