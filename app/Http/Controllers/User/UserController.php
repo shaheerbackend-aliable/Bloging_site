@@ -39,7 +39,7 @@ class UserController extends Controller
     {
         $user = User::where('role','admin')->first();
         $search_text=$req->search;
-        $list=BlogPost::where('heading','LIKE',"%$search_text%")->get();
+        $list=BlogPost::where('heading','LIKE',"%$search_text%")->orwhere('description','LIKE',"%$search_text%")->get();
         $desc_data=BlogPost::orderby('id','desc')->paginate(2);
         return view('user.searchdata',get_defined_vars());
     }

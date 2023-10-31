@@ -18,23 +18,30 @@
       </ul>
 
       <div class="nav-item dropdown m-3">
+        @if(auth()->user())
         <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           {{ Auth::user()->name }}
         </a>
+        @else
+        <div class="auth-setter ">
+          <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500" style="color:#fff; text-decoration:none;">Log in</a>
+          <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500" style="color:#fff; padding-left:3px; text-decoration:none"">Register</a>
+          </div>
+        @endif
        
-        <ul class="dropdown-menu pr-4">
-          <li><a class="dropdown-item" href="{{ route('profile.edit') }}">Profile</a></li>
-          <hr class="dropdown-divider">
-          <li>
-            <form method="POST" action="{{ route('logout') }}" id="logoutForm">
-              @csrf
-              <button class="dropdown-item text-dark" onclick="document.getElementById('logoutForm').submit()">
-                Logout
-              </button>
-            </form>
-          </li>
-        </ul>
+        <ul class=" dropdown-menu pr-4">
+            <li><a class="dropdown-item" href="{{ route('profile.edit') }}">Profile</a></li>
+            <hr class="dropdown-divider">
+            <li>
+              <form method="POST" action="{{ route('logout') }}" id="logoutForm">
+                @csrf
+                <button class="dropdown-item text-dark" onclick="document.getElementById('logoutForm').submit()">
+                  Logout
+                </button>
+              </form>
+            </li>
+            </ul>
+        </div>
       </div>
     </div>
-  </div>
 </nav>

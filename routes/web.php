@@ -48,6 +48,7 @@ Route::middleware('user')->group(function () {
     Route::get('user/search', [UserController::class, 'search'])->name('user.search');
     Route::post('user/subscriber', [SubscriberController::class, 'send_data'])->name('user.subscriber');
 });
+Route::get('user/search', [UserController::class, 'search'])->name('user.search');
 
 Route::get('/message', function () {
     return view('404');
