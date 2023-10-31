@@ -1,49 +1,25 @@
-<!DOCTYPE html? ?html lang=?en?? <head>
-<!-- Required meta tags --?
-    ?meta charset=?utf-8??
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Star Admin Premium Bootstrap Admin Dashboard Template</title>
--->
+<!DOCTYPE html>
+<head>
 
-<link rel="stylesheet" href="adminstyle.scss" />
-<link rel="stylesheet" href="assets/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
-<link rel="stylesheet" href="assets/vendors/iconfonts/ionicons/dist/css/ionicons.css">
-<link rel="stylesheet" href="assets/vendors/iconfonts/flag-icon-css/css/flag-icon.min.css">
-<link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
-<link rel="stylesheet" href="assets/vendors/css/vendor.bundle.addons.css">
-@vite('resources/css/app.scss')
-<link rel="stylesheet" href="adminstyle.scss" />
-<link rel="stylesheet" href="admin2.scss" />
-<link rel="stylesheet" href="style.scss" />
 <title>Admin Panel</title>
 
-<!-- End Layout styles -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+@vite('resources/css/app.scss')
+
 <link rel="shortcut icon" href="assets/images/favicon.ico" />
 </head>
 
 <body>
 
-    <!-- navbar start -->
-    <!-- @include('admin.navbar')-->
-
     @include('admin.navbar')
-    <!-- navbar End -->
-    <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_sidebar.html -->
         @include('admin.sidebar')
-        <!-- partial -->
         <div class="main-panel">
             <div class="content-wrapper">
-                <!-- Page Title Header Starts-->
-
-                <!-- Page Title Header Ends-->
                 @include('admin.table')
-
-
-                <!-- content-wrapper ends -->
-                <!-- partial:partials/_footer.html -->
-@include('admin.footer')
+                @include('admin.footer')
                 <!-- partial -->
             </div>
             <!-- main-panel ends -->

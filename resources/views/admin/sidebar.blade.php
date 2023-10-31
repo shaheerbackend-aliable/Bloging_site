@@ -1,40 +1,5 @@
 
 
-
-<!-- <style>
-    .sidebar {
-        width: 250px;
-        transition: transform 0.3s ease;
-    }
-
-    .sidebar.sidebar-hidden {
-        transform: translateX(-100%);
-    }
-
-    .toggle-btn {
-        display: none;
-    }
-
-    @media (max-width: 1024px) {
-        .toggle-btn {
-            display: none;
-        }
-    }
-
-    @media (max-width: 991px) {
-        .toggle-btn {
-            display: block;
-            position: fixed;
-            top: 25px;
-            left: 20px;
-            z-index: 9999;
-            cursor: pointer;
-        }
-    }
-
-
-</style> -->
-
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
                 <ul class="nav">
                     <li class="nav-item nav-profile">
@@ -76,16 +41,3 @@
                 </ul>
             </nav>
 
-
-            <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuToggle = document.getElementById("menu-toggle");
-            const sidebar = document.getElementById("sidebar");
-
-            if (menuToggle && sidebar) {
-                menuToggle.addEventListener("click", function () {
-                    sidebar.classList.toggle("sidebar-hidden");
-                });
-            }
-        });
-    </script> -->
