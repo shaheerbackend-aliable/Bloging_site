@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class ContactController extends Controller
 {
@@ -19,8 +20,8 @@ class ContactController extends Controller
         ]);
   
         Contact::create($request->all());
-  
-        return redirect()->back()
-                         ->with(['success' => 'Thank you for contact us. we will contact you shortly.']);
+        Alert::success('Message Sent Successfully!!');
+        return redirect()->back();
+                         
     }
 }

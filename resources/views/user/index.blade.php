@@ -18,11 +18,8 @@
 </head>
 
 <body style="background-color:#f5f5f5">
-  @if(Session::has('success'))
-  <div class="alert alert-success">
-    {{Session::get('success')}}
+  @include('sweetalert::alert')
   </div>
-  @endif
   <!-- start topbar content -->
 
   @include('user.Navbar')

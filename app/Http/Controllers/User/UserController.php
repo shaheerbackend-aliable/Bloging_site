@@ -31,6 +31,7 @@ class UserController extends Controller
         BlogPost::find($id)->increment('total_views');
       $user = User::where('role','admin')->first();
       $detail = BlogPost::find($id);
+      $desc_data=BlogPost::orderby('id','desc')->paginate(2);
       return view('user.blogdetail', get_defined_vars());
     }
 

@@ -1,7 +1,5 @@
 
-=======
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#415bf2">
->>>>>>> c79411da7f3847f37f0e0a2d1e26dca31307b394
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

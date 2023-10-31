@@ -22,6 +22,7 @@
 </head>
 
 <body>
+@include('sweetalert::alert')
     <!-- navbar start -->
     @include('admin.navbar')
     <!-- navbar End -->
