@@ -14,15 +14,15 @@
 <body>
 
     @include('admin.navbar')
-    <div class="container-fluid page-body-wrapper">
+    <div class="container-fluid page-body-wrapper p-0">
         @include('admin.sidebar')
         <div class="main-panel">
             <div class="content-wrapper">
                 @include('admin.table')
-                @include('admin.footer')
                 <!-- partial -->
             </div>
             <!-- main-panel ends -->
+            @include('admin.footer')
         </div>
         <!-- page-body-wrapper ends -->
     </div>

@@ -26,11 +26,11 @@
     @include('admin.navbar')
     <!-- navbar End -->
     <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
+    <div class="container-fluid page-body-wrapper p-0">
         <!-- partial:partials/_sidebar.html -->
         @include('admin.sidebar')
         <!-- partial -->
-        <div class="container-fluid page-body-wrapper">
+        <div class="container-fluid page-body-wrapper p-0">
             <div class="main-panel">
                 <div class="content-wrapper">
                     <!-- Page Title Header Starts-->
@@ -65,14 +65,9 @@
                 </div>
 
                 <!-- partial:partials/_footer.html -->
-                <footer class="footer ">
-
-                    <div class="container-fluid clearfix text-center">
-                        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright ©
-                            AcuteDev 2020</span>
-                    </div>
-                </footer>
+              
                 <!-- partial -->
+                @include('admin.footer')
             </div>
             <!-- main-panel ends -->
         </div>

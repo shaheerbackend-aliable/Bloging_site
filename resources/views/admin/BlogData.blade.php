@@ -19,6 +19,12 @@
 <link rel="stylesheet" href="assets/css/demo_1/style.css">
 <!-- End Layout styles -->
 <link rel="shortcut icon" href="assets/images/favicon.ico" />
+<style>
+.table-responsive .btn-update a, .table-responsive .btn-delete a{
+text-decoration: none;
+color: #fff
+}
+</style>
 </head>
 
 <body>
@@ -26,7 +32,7 @@
     @include('admin.navbar')
     <!-- navbar End -->
     <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
+    <div class="container-fluid page-body-wrapper p-0">
         <!-- partial:partials/_sidebar.html -->
         @include('admin.sidebar')
         <!-- partial -->
@@ -35,7 +41,7 @@
                 <!-- Page Title Header Starts-->
 
                 <!-- Page Title Header Ends-->
-                <div class="container-fluid page-body-wrapper">
+                <div class="container-fluid page-body-wrapper p-0">
                     <!-- partial:../../partials/_sidebar.html -->
 
                     <!-- partial -->
@@ -64,8 +70,8 @@
                                                         <td style="font-weight: bold;">{{$item->heading}}</td>
                                                         <td><img src="/post/{{$item->image}}" alt="Image error"></td>
                                                         <td>
-                                                            <button class="btn btn-success"><a href="{{Route('admin.up_blog',$item->id)}}">Update</a></button>
-                                                            <button class="btn btn-danger"><a href="{{Route('admin.delete',$item->id)}}">Delete</a></button>
+                                                            <button class="btn btn-success btn-update"><a href="{{Route('admin.up_blog',$item->id)}}">Update</a></button>
+                                                            <button class="btn btn-danger btn-delete"><a href="{{Route('admin.delete',$item->id)}}">Delete</a></button>
                                                         </td>
                                                     </tr>
                                                     @endforeach
@@ -88,15 +94,11 @@
 
                 <!-- content-wrapper ends -->
                 <!-- partial:partials/_footer.html -->
-                <footer class="footer ">
-
-                    <div class="container-fluid clearfix text-center">
-                        <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright ©
-                            AcuteDev 2020</span>
-                    </div>
-                </footer>
+                
                 <!-- partial -->
             </div>
+            @include('admin.footer')
+
             <!-- main-panel ends -->
         </div>
         <!-- page-body-wrapper ends -->

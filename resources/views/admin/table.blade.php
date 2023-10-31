@@ -1,7 +1,7 @@
 <!-- partial:../../partials/_navbar.html -->
 
 <!-- partial -->
-<div class="container-fluid page-body-wrapper">
+<div class="container-fluid page-body-wrapper p-0">
     <!-- partial:../../partials/_sidebar.html -->
 
     <!-- partial -->
@@ -41,6 +41,8 @@
 
             <!-- partial -->
         </div>
+        {{-- @include('admin.footer') --}}
+
         <!-- main-panel ends -->
     </div>
     <!-- page-body-wrapper ends -->
