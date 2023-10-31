@@ -37,9 +37,9 @@
   </div>
 </nav>
 
-{{-- <style>
-  .navbar .navbar-togglar{
+<style>
+  .navbar .navbar-collapse.show{
     background: #415bf2;
     z-index: 999;
   }
-</style> --}}
+</style>
