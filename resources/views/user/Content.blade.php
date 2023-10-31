@@ -10,6 +10,9 @@
                     <div class="article-title">
                         <h6><a href="#"></a></h6>
                         <h2>{{$content->heading}}</h2>
+                        <div class="article-content">
+                            <p>{{$content->description}}....</p>
+                            </div>
                         <div class="media">
                             <div class="avatar">
                                 <img src="https://bootdey.com/img/Content/avatar/avatar1.png" title="" alt="">
