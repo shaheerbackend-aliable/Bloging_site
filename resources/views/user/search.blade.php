@@ -22,9 +22,9 @@
         <div class="col-md-4 d-flex">
           <div class="social-media">
             <p class="mb-0 d-flex">
-              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-              <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+              <a href="https://www.facebook.com/profile.php?id=100088669903175&mibextid=ZbWKwL" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+              <a href="https://twitter.com/home?utm_source=liteAPK&utm_medium=shortcut&first_run=false" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+              <a href="https://www.instagram.com/babajie392" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
             </p>
           </div>
         </div>
