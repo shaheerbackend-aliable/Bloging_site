@@ -11,7 +11,7 @@
             <li><span class="icon fa fa-map"></span><span class="text">203 Fake St. Mountain View, San Francisco,
                 California, USA</span></li>
             <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-            <li><a href="#"><span class="icon fa fa-send"></span><span class="text">info@yourdomain.com</span></a>
+            <li><a href="#"><span class="icon fa fa-send"></span><span class="text">Babajie.com</span></a>
             </li>
           </ul>
         </div>
@@ -85,7 +85,7 @@
         </p>
       </div>
       <div class="col-md-6 col-lg-4 text-md-right text-light">
-        <p class="copyright text-light">This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#"
+        <p class="copyright text-light">This Website is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="#"
           class="hover-text-light"  target="_blank">Acute Dev</a>
         </p>
       </div>
